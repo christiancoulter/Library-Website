@@ -8,9 +8,9 @@ Status: This project is still under development.
 Before you begin, ensure you have met the following requirements:
 *
 
-## Installing <project_name>
+## Installing Library Manager
 
-To install <project_name>, follow these steps:
+To install Library Manager, follow these steps:
 
 Linux and macOS:
 ```
@@ -21,9 +21,9 @@ Windows:
 ```
 <install_command>
 ```
-## Using <project_name>
+## Using Library Manager
 
-To use SIS, follow these steps:
+To use Library Manager, follow these steps:
 
 ```
 <usage_example>
