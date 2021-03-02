@@ -25,7 +25,6 @@ namespace WebApplication2
                     // footer buttons visibility for user
                     LinkButton6.Visible = true; // admin login button
                     LinkButton11.Visible = false; // author management button
-                    LinkButton12.Visible = false; // publisher management button
                     LinkButton8.Visible = false; // book inventory button
                     LinkButton9.Visible = false; // book issuing button
                     LinkButton10.Visible = false; // member management button
@@ -42,7 +41,6 @@ namespace WebApplication2
                     // footer buttons visibility for user
                     LinkButton6.Visible = true; // admin login button
                     LinkButton11.Visible = false; // author management button
-                    LinkButton12.Visible = false; // publisher management button
                     LinkButton8.Visible = false; // book inventory button
                     LinkButton9.Visible = false; // book issuing button
                     LinkButton10.Visible = false; // member management button
@@ -59,7 +57,6 @@ namespace WebApplication2
                     // footer buttons visibility for user
                     LinkButton6.Visible = false; // admin login button
                     LinkButton11.Visible = true; // author management button
-                    LinkButton12.Visible = true; // publisher management button
                     LinkButton8.Visible = true; // book inventory button
                     LinkButton9.Visible = true; // book issuing button
                     LinkButton10.Visible = true; // member management button
@@ -81,11 +78,6 @@ namespace WebApplication2
         protected void LinkButton11_Click(object sender, EventArgs e)
         {
             Response.Redirect("adminauthormanagement.aspx");
-        }
-
-        protected void LinkButton12_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("adminpublishermanagement.aspx");
         }
 
         protected void LinkButton8_Click(object sender, EventArgs e)
@@ -113,6 +105,7 @@ namespace WebApplication2
             Response.Redirect("userlogin.aspx");
         }
 
+        //logout
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
             Session["username"] = "";
@@ -130,14 +123,14 @@ namespace WebApplication2
             // footer buttons visibility for user
             LinkButton6.Visible = true; // admin login button
             LinkButton11.Visible = false; // author management button
-            LinkButton12.Visible = false; // publisher management button
             LinkButton8.Visible = false; // book inventory button
             LinkButton9.Visible = false; // book issuing button
             LinkButton10.Visible = false; // member management button
 
-            
+            Response.Redirect("homepage.aspx");
         }
 
+        //view profile
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
 
