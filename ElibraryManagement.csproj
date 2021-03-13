@@ -1746,6 +1746,7 @@
     <Content Include="signup.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="userprofile.aspx" />
+    <Content Include="viewbooks.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -1821,6 +1822,13 @@
     </Compile>
     <Compile Include="userprofile.aspx.designer.cs">
       <DependentUpon>userprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewbooks.aspx.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewbooks.aspx.designer.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -1901,7 +1909,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="book_inventory\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

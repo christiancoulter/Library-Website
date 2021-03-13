@@ -4,8 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       
     <section>
-        <center><img src="images/in-homepage-banner.jpg" class="img-fluid" /></center>
-        
+        <center><img src="images/in-homepage-banner.jpg" class="img-fluid" /></center>       
     </section>
 
     <!--features-->

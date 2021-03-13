@@ -51,13 +51,13 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.TextBox TextBox11;
 
         /// <summary>
-        /// Button6 control.
+        /// LinkButton6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Button6;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton6;
 
         /// <summary>
         /// LinkButton1 control.
@@ -148,6 +148,15 @@ namespace WebApplication2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
         /// GridView1 control.

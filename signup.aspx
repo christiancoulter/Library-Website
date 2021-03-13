@@ -6,7 +6,6 @@
     <div class="container">
         <div class="col-md-8 mx-auto">
             <div class="card">
-
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
@@ -57,9 +56,7 @@
                         <div class="col">
                             <label>Street</label>
                             <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Street"></asp:TextBox>
-                        </div>
-
-                    
+                        </div>                    
                     </div>
 
                     <div class="row">

@@ -21,7 +21,6 @@
                                 <h4>Your Profile</h4>
                                 <span>Account Status - </span>
                                 <asp:Label class="badge badge-success" ID="Label1" runat="server" Text="Active"></asp:Label>
-                                
                             </center>
                         </div>
                     </div>
@@ -61,8 +60,6 @@
                             <label>Street</label>
                             <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Street"></asp:TextBox>
                         </div>
-
-                    
                     </div>
 
                     <div class="row">
@@ -132,8 +129,8 @@
                         </div>
 
                         <div class="col-md-4">
-                            <label>Pin Code</label>
-                            <asp:TextBox class="form-control" ID="TextBox7" runat="server" placeholder="Pin Code" TextMode="Number"></asp:TextBox>
+                            <label>Zipcode</label>
+                            <asp:TextBox class="form-control" ID="TextBox7" runat="server" placeholder="Zipcode" TextMode="Number"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col">
@@ -142,7 +139,6 @@
                         </center>
                     </div>
 
-                    
                     <div class="row">
                         <div class="col-md-4">
                             <label>Member ID</label>
@@ -151,18 +147,17 @@
 
                         <div class="col-md-4">
                             <label>Current Password</label>
-                            <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Password" ReadOnly="True"></asp:TextBox>
+                            <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Password" ReadOnly="True" TextMode="Password"></asp:TextBox>
                         </div>
 
                         <div class="col-md-4">
                             <label>New Password</label>
-                            <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Password" ReadOnly="False"></asp:TextBox>
+                            <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Password" ReadOnly="False" ></asp:TextBox>
                         </div>
                     </div>
                      
-
                     <div class="form-group">
-                            </br><asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" />
+                            </br><asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" OnClick="Button1_Click"/>
                     </div>
                 </div>
             </div>
@@ -185,9 +180,7 @@
                         <div class="col">
                             <center>
                                 <h4>Your Issued Books</h4>
-                                
                                 <asp:Label class="badge badge-success" ID="Label2" runat="server" Text="Due Date Info"></asp:Label>
-                                
                             </center>
                         </div>
                     </div>
@@ -203,7 +196,6 @@
                             <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
                         </div>
                     </div>
-
                   </div>  
             </div>
     </div>

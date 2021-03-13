@@ -3,14 +3,13 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-
         });
     </script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<div class="container">
+    <div class="container">
     <div class="row">
         <div class="col-md-5">
             <div class="card">
@@ -69,19 +68,15 @@
                             <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" OnClick="Button4_Click" />
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
         <a href="homepage.aspx"><< Back to Home</a><br /><br />
 
         </div>
-
         <div class="col-md-7">
            <div class="card">
-                <div class="card-body">
-                    
+                <div class="card-body">           
                     <div class="row">
                         <div class="col">
                             <center>
@@ -89,8 +84,6 @@
                             </center>
                         </div>
                     </div>
-
-                   
 
                     <div class="row">
                         <div class="col">
@@ -108,9 +101,7 @@
                             </asp:GridView>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:elibraryDBConnectionString %>' SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
                         </div>
-                        
                     </div>
-
                   </div>  
             </div>
     </div>

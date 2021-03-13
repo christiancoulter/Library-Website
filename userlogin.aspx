@@ -6,7 +6,6 @@
     <div class="container">
         <div class="col-md-6 mx-auto">
             <div class="card">
-
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
@@ -14,7 +13,7 @@
                                 <img width="150px" src="images/generaluser.png" />
                             </center>
                         </div>
-                        </div>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <center>
@@ -50,10 +49,8 @@
                             <div class="form-group">
                                 <a href="signup.aspx"><input class="btn btn-primary btn-block btn-lg" id="Button2" type="button" value="Sign Up" /></a>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
 

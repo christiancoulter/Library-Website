@@ -36,7 +36,7 @@ namespace WebApplication2
                     LinkButton2.Visible = false; // sign up button
                     LinkButton3.Visible = true; // logout button
                     LinkButton7.Visible = true; // hello user 
-                    LinkButton7.Text = "Hello " + Session["username"].ToString();
+                    LinkButton7.Text = "Hello, " + Session["fullname"].ToString();
 
                     // footer buttons visibility for user
                     LinkButton6.Visible = true; // admin login button
@@ -50,9 +50,9 @@ namespace WebApplication2
                     // nav bar buttons visibility for user
                     LinkButton1.Visible = false; // user login button
                     LinkButton2.Visible = false; // sign up button
-                    LinkButton3.Visible = false; // logout button
-                    LinkButton7.Visible = false; // hello user 
-                    LinkButton7.Text = "Hello Admin";
+                    LinkButton3.Visible = true; // logout button
+                    LinkButton7.Visible = true; // hello user 
+                    LinkButton7.Text = "Hello, Admin";
 
                     // footer buttons visibility for user
                     LinkButton6.Visible = false; // admin login button
@@ -65,8 +65,7 @@ namespace WebApplication2
             catch(Exception ex)
             {
 
-            }
-            
+            }           
         }
 
 
@@ -133,7 +132,13 @@ namespace WebApplication2
         //view profile
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("userprofile.aspx");
         }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("viewbooks.aspx");
+        }
+
     }
 }

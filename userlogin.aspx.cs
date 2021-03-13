@@ -52,13 +52,8 @@ namespace WebApplication2
             }
             catch (Exception ex)
             {
-
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
-
-           // Response.Write("<script>alert('Sign Up Successful. Go to User Login to Login');</script>");
         }
-
-        // user defined functions
-
     }
 }
